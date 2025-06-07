@@ -23,10 +23,10 @@ dependencies {
     api(libs.org.meilisearch.sdk.meilisearch.java)
     api(libs.com.squareup.okhttp3)
     implementation(libs.com.google.code.guava)
-    developmentOnly(libs.org.springframework.boot.spring.boot.devtools)
-    runtimeOnly(libs.org.mariadb.jdbc.mariadb.java.client)
     testImplementation(libs.org.springframework.boot.spring.boot.starter.test)
     testImplementation(libs.org.springframework.security.spring.security.test)
+    developmentOnly(libs.org.springframework.boot.spring.boot.devtools)
+    runtimeOnly(libs.org.mariadb.jdbc.mariadb.java.client)
 }
 
 group = "com.imjustdoom.myboot"
