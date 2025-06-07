@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1749256765968-1
+      author: doom
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_example
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValue: Hello There
+                  name: value
+                  type: VARCHAR(255)
+            tableName: example
+
